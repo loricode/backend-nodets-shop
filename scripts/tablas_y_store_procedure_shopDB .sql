@@ -85,7 +85,7 @@ BEGIN
   SELECT 
    id, username, email INTO var_userId, var_username, var_email
    FROM shopdb.users u 
-   WHERE email = email_param LIMIT 1;
+   WHERE email = email_param;
    
    select role_id INTO var_user_roleId FROM user_role WHERE user_id = var_userId;
    
